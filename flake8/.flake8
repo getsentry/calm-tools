@@ -1,6 +1,11 @@
 [flake8]
 exclude =
   .git,
+  .eggs,
+  .venv,
+  venv,
+  env,
+  .env,
   __pycache__,
   build,
   dist
