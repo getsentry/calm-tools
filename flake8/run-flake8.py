@@ -13,7 +13,7 @@ _report_re = re.compile(r'''(?x)
     (?P<message>.*)
 ''')
 
-args = []
+args = ['--append-config=.flake8-overrides']
 
 for arg in sys.argv[1:]:
     args.append('--filename=%s' % os.path.join('.', arg))
